@@ -37,14 +37,7 @@ h3 {
     margin: 0;
 }
 
-a {
-    color: var(--magenta);
-}
 
-a:hover {
-    color: var(--hotmag);
-    text-decoration: none;
-}
 
 
 /* intro styles */
@@ -62,7 +55,9 @@ a:hover {
     display: block;
     font-weight: 300;
     
+    
 }
+
 
 
 
@@ -85,13 +80,13 @@ a:hover {
 nav {
     font-family: var(--mono);
     font-size: 80%;
-  padding: 2.5rem 5rem;
+  padding: 2.5rem 3rem;
   display: block;
    
-  position: fixed; /* Set the navbar to fixed position */
+  position: sticky; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%;
-  background-color: black;
+  background-color: #ff4500;
   
   
     
@@ -129,18 +124,18 @@ nav [class*="fa-github"] {
 
 nav h1 [class*="fa-"] {
     font-size: 100%;
-    color: rgb(165, 164, 164);
+    color: rgb(0, 0, 0);
 }
 
 nav a {
-    color: #838383;
+    color: #000000;
     text-decoration: none;
     display: block;
 }
 
 nav a:hover,
 nav [class*="fa-"]:hover {
-    color: var(--magenta);
+    color: white;
 }
 nav [class*="fa-linkedin"]:hover {
     color: #6298b4;
@@ -151,7 +146,7 @@ nav [class*="fa-github"]:hover {
 
 .button {
     background-color: var(--magenta);
-    color: rgb(0, 0, 0);
+    color: orangered;
     padding: 0.3rem;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
@@ -163,7 +158,7 @@ nav [class*="fa-github"]:hover {
 
 .button:hover {
     color: white;
-    background-color: orangered;
+    background-color: rgb(0, 0, 0);
 }
 
 
@@ -173,23 +168,33 @@ nav [class*="fa-github"]:hover {
 
 @media (min-width: 850px) {
     nav {
-        max-width: 1350px;
-        margin: 0 auto;
+        max-width: 100%;
+        margin: auto auto;
     }
     nav li:first-child {
         flex-basis: auto;
         text-align: left;
         margin-right: auto;
     }
+    .logo-div{
+      margin: 0;
+      text-align: right;
+      align-items: right;
+    }
+    .logo-name{
+      margin: 0;
+      text-align: left;
+    }
+    
 }
 a.hover-underline:before {
     content: "";
     position: absolute;
     width: 100%;
-    height: 2px;
-    bottom: -3px;
+    height: 1px;
+    bottom: -2px;
     left: 0;
-    background-color: #ff4500;
+    background-color: #ffffff;
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.8s ease-in-out;
@@ -199,7 +204,7 @@ a.hover-underline:before {
     transform: scaleX(1);
   }
   a.hover-underline:hover {
-    color: orangered
+    color: rgb(255, 255, 255)
     
   }
   nav a {
@@ -220,7 +225,7 @@ a.hover-underline:before {
   
   body {
     
-    
+   
     
     
     line-height: 1.6;
@@ -398,10 +403,10 @@ footer [class*="fa-"]:hover{ color: orangered;
   display: flex;
 }
 .section-blue{
-  padding:10rem 5rem 0 5rem;
+  padding:5rem 5rem 0 5rem;
 }
 u{
-  color:orangered;
+  color:rgb(255, 255, 255);
 }
 @media (min-width: 550px) {
     #projects{max-width: 1350px;
@@ -413,7 +418,7 @@ u{
 }}
 #welcome-section{
     margin:0 auto;
-    padding: 15rem 1rem 1rem 1rem;
+    padding: 4rem 1rem 1rem 1rem;
     max-width: 1200px;
     
 }
@@ -487,12 +492,65 @@ ul{
     }
     img{
         
+      border: 1px transparent;
+      border-radius: 20px;
+      padding-top: 0;
+      margin: 0;
+      
+      
+  }
+    .logo{
+        
         border: 1px transparent;
         border-radius: 20px;
         padding-top: 0;
         margin: 0;
-        height: 350px;
+        height: 50px;
+        width: 80px;
+        
     }
     article{
         padding-top:2rem ;
+    }
+    .logo-name{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+    }
+    .logo-div{
+      margin: auto 0;
+      
+    }
+    .name-div{
+      margin: auto 0;
+      text-align: left;
+      padding: 0;
+    }
+    .margin{
+      
+      margin: 10rem 10rem 0rem 10rem ;
+      
+      height: 1px;
+      max-width: 100%;
+      background-color: #ff4500;
+      justify-content: center;
+    }
+    .margin-1{
+      
+      margin: 5rem 10rem 0 10rem ;
+      
+      height: 1px;
+      max-width: 100%;
+      background-color: #ff4500;
+      justify-content: center;
+    }
+    .margin-2{
+      
+      margin: 0rem 10rem 5rem 10rem ;
+      
+      height: 1px;
+      max-width: 100%;
+      background-color: #ff4500;
+      justify-content: center;
     }
